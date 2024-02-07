@@ -112,32 +112,34 @@
                     <div class="col s12 m12 l6 contact-content">
                         <h2 class="H-Cform">Contact Form</h2>
                         <br>
-                        <form>
+                        <form
+                            name="contact" method="post" data-netlify="true" onsubmit="submit"
+                        >
                             <div class="input-group">
                                 <label>Full Name *</label>
                                     <div class="row">
                                         <div class="col s6">
-                                            <input type="text" placeholder="First Name">
+                                            <input type="text" placeholder="First Name" name="first_name">
                                         </div>
                                         <div class="col s6">
-                                            <input type="text" placeholder="Last Name">
+                                            <input type="text" placeholder="Last Name" name="last_name">
                                         </div>
                                     </div>
                             </div>
                             <div class="input-group">
                                 <label for="">Email Address *</label>
-                                    <input type="email" placeholder="Email Address">
+                                    <input type="email" placeholder="Email Address" name="email">
                             </div>
                             <div>
                                 <label for="">What service(s) are you interested in? *</label>
                                     <div class="message">
-                                        <input type="text" placeholder="Service(s)">
+                                        <input type="text" placeholder="Service(s)" name="services">
                                     </div>
                             </div>
                             <div class="input-group">
                                 <label>Reason for contacting? *</label>
                                     <div class="message">
-                                        <input type="text" placeholder="Your Message">
+                                        <input type="text" placeholder="Your Message" name="message">
                                     </div>
                             </div>
                         </form>

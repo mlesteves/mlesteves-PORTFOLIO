@@ -1,4 +1,9 @@
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 /* Navbar */
 .nav-wrapper {
     background-color: #202020;
@@ -135,7 +140,7 @@ p {
     color: #FFFFFF;
     font-weight: 500;
     padding-bottom: 0;
-    padding-left: 20px;
+    padding-left: 0;
 }
 
 .h3-home {
@@ -176,7 +181,7 @@ p {
     color: #FFFFFF;
     font-weight: 500;
     padding-bottom: 0;
-    padding-left: 20px;
+    padding-left: 0;
 }
 
 .h3-about {
@@ -424,10 +429,52 @@ h5 {
     width: 200px;
 }
 
-/* Contact Page */
+/* About Page */
+
+.about-intro{
+    position: relative;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+
+    
+}
+
 .about-image1 {
-    padding-top: 10px;
-    height: fit-content;
+    float: left;
+    height: 280px;
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
+.about-content1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin: 30px;
+    padding-left: 30px;
+    text-align: justify;
+}
+
+
+.about-ct {
+    background-color: #A4816D;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.about-font1 {
+    background-color: #A4816D;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.about-font2 {
+    background-color: #A4816D;
+    color: #202020;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -442,6 +489,27 @@ h5 {
     margin: 0;
     padding-top: 0;
     padding-bottom: 80px;
+}
+
+.about-skill {
+    background-color: #202020;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.about-text1 {
+    color: #FFFFFF;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    text-align: left;
+}
+
+
+.about-text2 {
+    color: #A4816D;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: 100;
 }
 
 
@@ -460,7 +528,7 @@ h5 {
     color: #FFFFFF;
     font-weight: 500;
     padding-bottom: 0;
-    padding-left: 20px;
+    padding-left: 0;
 }
 
 body {
