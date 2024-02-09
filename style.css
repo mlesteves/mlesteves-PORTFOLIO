@@ -562,6 +562,15 @@ body {
     padding-bottom: 30px;
 }
 
+.section {
+    background-color: #A4816D;
+}
+
+.input-field {
+    color: #202020;
+    
+}
+
 
 container .text-box1 {
     margin-top: 0%;
@@ -600,6 +609,10 @@ input {
 label {
     font-size: larger;
     color: #202020;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
     font-family: 'Times New Roman', Times, serif;
 }
 
