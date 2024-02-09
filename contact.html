@@ -104,6 +104,67 @@
             </div>
         </div>
 
+        <section class="section container" id="contact">
+            <div class="row">
+                <div class="col s12 m5">
+                    <h3>Get in Touch</h3>
+                    <p>Contact Number</p>
+                </div>
+                <div class="col s6 l6">
+                    <h2 class="H-Cform">Contact Form</h2>
+                    <form action="">
+                        <div class="input-field">
+                            <input type="text" id="name">
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="email" id="email">
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="input-field">
+                            <p>Service'l looking...</p>
+                            <p>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Administrative Assistantance</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Administrative Assistantance</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Administrative Assistantance</span>
+                                </label>
+                            </p>
+                        </div>
+                        <div class="input-field">
+                            <textarea id="message" class="materialize-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" id="date" class="datepicker">
+                            <label for="date">Choose a date for appointment...</label>
+                        </div>
+                        <div class="input-field center">
+                            <button class="btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Contact Form -->
+        <div class="container">
+            
+        </div>
+        
+
 
         <!-- Contact Form -->
         <div class="contact-1">
@@ -314,6 +375,8 @@
             $('.slider').slider();
             // Scrollspy inet
             $('.scrollspy').scrollSpy();
+            // Datepicker inet
+            $('datepicker').datepicker()
             // Dropdown inet
             $('.dropdown-trigger').dropdown({
                 alignment: 'left',
