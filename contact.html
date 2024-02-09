@@ -158,6 +158,10 @@
                             <input type="text" id="date" class="datepicker" name="date">
                             <label for="date">Choose a date for appointment...</label>
                         </div>
+                        <div class="input-field">
+                            <input type="text" id="time" class="timepicker" name="time">
+                            <label for="time">Appointment time</label>
+                        </div>
                         <div class="input-field center">
                             <button class="btn waves-effect waves-light center button5">Submit</button>
                         </div>
@@ -302,7 +306,10 @@
             // Scrollspy inet
             $('.scrollspy').scrollSpy();
             // Datepicker inet
-            $('datepicker').datepicker()
+            $('.datepicker').datepicker({
+            })
+            $('.timepicker').timepicker({
+            })
             // Dropdown inet
             $('.dropdown-trigger').dropdown({
                 alignment: 'left',

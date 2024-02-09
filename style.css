@@ -274,11 +274,14 @@ h5 {
 }
 
 .home-services {
-    background-color: #202020;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
+.home-sv {
+    background-color: #202020;
+padding: 20px;
+}
 
 .home-font1 {
     color: white;
