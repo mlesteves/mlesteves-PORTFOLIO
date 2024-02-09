@@ -112,13 +112,14 @@
                 </div>
                 <div class="col s12 l6">
                     <h2 class="H-Cform">Contact Form</h2>
-                    <form name="Contact_form" method="post" netlify>
+                    <form 
+                        name="Contact_form" method="post" data-netlify="true" onsubmit="submit">
                         <div class="input-field">
-                            <input type="text" id="name">
+                            <input type="text" id="name" name="name">
                             <label for="name">Your Name</label>
                         </div>
                         <div class="input-field">
-                            <input type="email" id="email">
+                            <input type="email" id="email" name="email">
                             <label for="email">Your Email</label>
                         </div>
                         <div class="input-field">
@@ -126,35 +127,35 @@
                             <br>
                             <p>
                                 <label>
-                                    <input type="checkbox">
+                                    <input type="checkbox" name="service">
                                     <span>Administrative Assistantance</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                    <input type="checkbox">
+                                    <input type="checkbox" name="service">
                                     <span>Social Media Marketing</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                    <input type="checkbox">
+                                    <input type="checkbox" name="service">
                                     <span>Web Design</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                    <input type="checkbox">
+                                    <input type="checkbox" name="service">
                                     <span>Architectural Design</span>
                                 </label>
                             </p>
                         </div>
                         <div class="input-field">
-                            <textarea id="message" class="materialize-textarea"></textarea>
+                            <textarea id="message" class="materialize-textarea" name="message"></textarea>
                             <label for="message">Your message</label>
                         </div>
                         <div class="input-field">
-                            <input type="text" id="date" class="datepicker">
+                            <input type="text" id="date" class="datepicker" name="date">
                             <label for="date">Choose a date for appointment...</label>
                         </div>
                         <div class="input-field center">
@@ -200,7 +201,6 @@
 
         
     </main>
-
 
 
     <!-- Footer -->
