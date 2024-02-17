@@ -506,7 +506,7 @@ padding: 20px;
     color: #FFFFFF;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 600;
-    text-align: left;
+    text-align: center;
 }
 
 
@@ -515,6 +515,7 @@ padding: 20px;
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;
     font-weight: 100;
+    
 }
 
 .about-project {
