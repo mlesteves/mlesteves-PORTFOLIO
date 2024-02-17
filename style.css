@@ -471,6 +471,7 @@ padding: 20px;
     color: white;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 .about-font2 {
@@ -478,6 +479,7 @@ padding: 20px;
     color: #202020;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 
@@ -513,6 +515,10 @@ padding: 20px;
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;
     font-weight: 100;
+}
+
+.about-project {
+    font-family: Pristina;
 }
 
 
