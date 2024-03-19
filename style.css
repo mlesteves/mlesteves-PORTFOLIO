@@ -271,6 +271,20 @@ padding: 20px;
     margin: 0;
 }
 
+.home-font3 {
+    color: #202020;
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+}
+
+.home-font4 {
+    color: #A4816D;
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+}
+
 .home-tools {
     background-color: white;
     padding-top: 30px;
@@ -376,6 +390,7 @@ padding: 20px;
     font-size: medium;
     font-weight: 100;
 }
+
 
 .btn-end {
     background-color: #202020;
