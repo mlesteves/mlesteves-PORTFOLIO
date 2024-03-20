@@ -619,7 +619,7 @@ div.gallery{
 div.gallery .item{
     position: relative;
     margin: 4px;
-    width: calc(20% - 8px);
+    width: calc(33.33% - 8px);
     overflow: hidden;
     cursor: pointer;
 }
@@ -646,7 +646,7 @@ div.gallery .item:hover img{
     justify-content: center;
     align-items: center;
     background-color: rgba(5,85,92,0.7);
-    color: var(--body-clr);
+    color: #FFFFFF;
     padding: 15px;
     overflow: hidden;
     transition: opacity 0.2s ease-in-out;
