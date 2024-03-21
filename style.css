@@ -511,20 +511,6 @@ padding: 20px;
     text-align: center;
 }
 
-
-.carousel .carousel-slider{
-    width: 100%;
-    height: auto;
-
-}
-
-.carousel .carousel-item img{
-    width: 100%;
-    margin: 0;
-    padding-top: 0;
-    padding-bottom: 80px;
-}
-
 .about-skill {
     background-color: #202020;
     padding-top: 25px;
@@ -551,6 +537,121 @@ padding: 20px;
     font-family: Pristina;
 }
 
+.certificate{
+    position: relative;
+}
+
+.certificate .slide-container .slide{
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 9%;
+    padding-bottom: 70px;
+}
+
+.certificate .slide-container .slide .content{
+    flex: 1 1 350px;
+    animation: slideContent .4s linear .6s backwards;
+}
+
+@keyframes slideContent{
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+}
+
+.certificate .slide-container .slide .image{
+    flex: 1 1 500px;
+}
+
+.certificate .slide-container .slide .image img{
+    width: 100%;
+    animation: slideImage .4s linear;
+}
+
+
+@keyframes slideImage{
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+
+
+.certificate .slide-container .slide .content h3{
+    font-size: 35px;
+    background-color: #A4816D;
+    color: #FFFFFF;
+    text-align: left;
+}
+.certificate .slide-container .slide .content h6{
+    font-size: 18px;
+    background-color: #A4816D;
+    color: #FFFFFF;
+    text-align: left;
+    margin: 0;
+}
+
+.certificate .slide-container .slide .content p{
+    font-size: 16px;
+    color: #202020;
+    padding: 10px 0;
+    font-style: italic;
+}
+
+.certificate .slide-container .slide .content p span{
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 10px 0;
+}
+
+.certificate .slide-container{
+    display: none;
+} 
+
+.certificate .slide-container.active{
+    display: block;
+}
+
+.certificate #prev,
+.certificate #next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFFFFF;
+    background: #202020;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.certificate #prev:hover,
+.certificate #next:hover{
+    background: #A4816D;
+}
+
+.certificate #prev{
+    left: 20px;
+}
+
+
+.certificate #next{
+    right: 20px;
+}
+
+
+
+
+
+
+
 /* Portfolio */
 
 .portfolio-font1 {
@@ -565,8 +666,8 @@ padding: 20px;
     background-color: #FFFFFF;
     color: #A4816D;
     margin: 0;
-    text-align: center;
-    padding-left: 10px;
+    padding-left: 50px;
+    padding-top: 0;
 }
 
 

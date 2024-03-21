@@ -212,14 +212,14 @@
 
         <!-- Certificate & Trainings -->
         <div class="about-ct">
-            <div class="container">
+            <div class="container head-certificate">
                 <div>
                     <div class="row">
-                        <div class="col s6">
+                        <div class="col m12 l6">
                             <h3 class="about-font1">Certificate & Tranings</h3>
                             <h3 class="about-font2">Attended</h3>
                         </div>
-                        <div class="col s6">
+                        <div class="col m12 l6">
                             <br class="hide-on-med-and-down">
                             <br class="hide-on-med-and-down">
                             <br class="hide-on-med-and-down">
@@ -229,37 +229,87 @@
                 </div>
             </div>
 
-            <div class="container">
-                <div class="carousel carousel-slider">
-                    <a href="#one" class="carousel-item">
-                        <img src="Certificates/ESTEVES-CCS-CERTIFICATE-1_page-0001.jpg" alt="" class="responsive-img">
-                    </a>
-                    <a href="#two" class="carousel-item">
-                        <img src="Certificates/ESTEVES-CWD-CERTIFICATE-1_page-0001.jpg" alt="" class="responsive-img">
-                    </a>
-                    <a href="#three" class="carousel-item">
-                        <img src="Certificates/Meg Lean G. Esteves Certificates_page-0001.jpg" alt="" class="responsive-img">
-                    </a>
-                    <a href="#four" class="carousel-item">
-                        <img src="Certificates/Meg Lean G. Esteves Certificates_page-0002.jpg" alt="" class="responsive-img">
-                    </a>
-                    <a href="#five" class="carousel-item">
-                        <img src="Certificates/Meg Lean G. Esteves Certificates_page-0003.jpg" alt="" class="responsive-img">
-                    </a>
-                    <a href="#six" class="carousel-item">
-                        <img src="Certificates/Meg Lean G. Esteves Certificates_page-0004.jpg" alt="" class="responsive-img">
-                    </a>
-                    <a href="#seven" class="carousel-item">
-                        <img src="Certificates/Virtual Assistant_Social Media Marketing_VA TP.jpg" alt="" class="responsive-img">
-                    </a>
-                    <a href="#eight" class="carousel-item">
-                        <img src="Certificates/Graphic Design with Canva Course_Kurso.ph_page-0001.jpg" alt="" class="responsive-img">
-                    </a>
-                    <br>
-                <div class="divider center"></div>
+
+            <div class="container certificate">
+                <div class="slide-container active">
+                    <div class="slide">
+                        <div class="content">
+                            <h3>Creative Web Design</h3>
+                            <h6>TELECALL INSTITUTE OF TECHNOLOGY INC.</h6>
+                            <h6>Oct 2023 - Nov 2023 (102 hours Training)</h6>
+                            <p> <span>Skilled Acquired:</span> Design and develop a website with HTML, Design and Develop a website applying CSS, Design a website applying digtal images, Tables for tabular data and web forms, and Design a website with multimedia apply quality standards.</p>
+                        </div>
+                        <div class="image">
+                            <img src="Certificates/ESTEVES-CWD-CERTIFICATE-1_page-0001.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="divider center"></div>
+                <div class="slide-container">
+                    <div class="slide">
+                        <div class="content">
+                            <h3>Contact Center Service NCII</h3>
+                            <h6>TELECALL INSTITUTE OF TECHNOLOGY INC.</h6>
+                            <h6>Nov 2023 - Dec 2023 (144 hours Training)</h6>
+                            <p><span>Skills Acquired:</span> Communicating using the English language, Making/receiving calls to/from cutsomer,
+                            Handling complaints,
+                            Dealing with difficult customers, Providing after-sales support, Preparing document based on conversations with customers, Performing computer operation and internet navigation.</p>
+                        </div>
+                        <div class="image">
+                            <img src="Certificates/ESTEVES-CCS-CERTIFICATE-1_page-0001.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-container">
+                    <div class="slide">
+                        <div class="content">
+                            <h3>Basic WordPress Course</h3>
+                            <h6>VIRTUALWORKPH</h6>
+                            <h6>Aug 22, 2023</h6>
+                            <p><span>Skills Acquired:</span> Basic hosting knowledge, Knowledge in WordPress user interface, Setting up an offline website, Content cretation, Content formatting, and WordPress full site editing.</p>
+                        </div>
+                        <div class="image">
+                            <img src="Certificates/Meg Lean G. Esteves Certificates_page-0002.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-container">
+                    <div class="slide">
+                        <div class="content">
+                            <h3>Social Media Marketing</h3>
+                            <h6>VIRTUALWORKPH</h6>
+                            <h6>Aug 22, 2023</h6>
+                            <p><span>Skills Acquired:</span> Optimizing social media profiles, Creating a social media strategy, Growing a community of loyal fans, and Content marketing.</p>
+                        </div>
+                        <div class="image">
+                            <img src="Certificates/Meg Lean G. Esteves Certificates_page-0003.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-container">
+                    <div class="slide">
+                        <div class="content">
+                            <h3>VA/ Social Media Marketing</h3>
+                            <h6>Virtual Assistant Training Philippines</h6>
+                            <h6>July 22, 2023 (5 days - 15 hours Course)</h6>
+                            <p><span>Skills Acquired:</span> Optimizing social media profiles, Creating a social media post, Create and schedule Facebook Ads, Content creation, WordPress, Creating Leads, and Search engine optimization.</p>
+                        </div>
+                        <div class="image">
+                            <img src="Certificates/Meg Lean G. Esteves Certificates_page-0003.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                
+        
+                <div id="prev" onclick="prev()"> < </div>
+                <div id="next" onclick="next()"> > </div>
+        
+        
+        
             </div>
+
+
+
         </div>
 
 
@@ -356,6 +406,29 @@
 
     <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+		let slides = document.querySelectorAll('.slide-container');
+		let index = 0;
+
+		// next function
+		function next(){
+			slides[index].classList.remove('active');
+			index = (index + 1) % slides.length;
+			slides[index].classList.add('active')
+		}
+
+
+		// previous function
+		function prev(){
+			slides[index].classList.remove('active');
+			index = (index - 1 + slides.length) % slides.length;
+			slides[index].classList.add('active')
+		}
+
+		
+	</script>
+
             
     <script>
         $(document).ready(function(){
@@ -363,12 +436,6 @@
             $('.sidenav').sidenav();
             // Materialboxed inet
             $('.materialboxed').materialbox();
-            // Slider inet
-            $('.slider').slider();
-            $('.carousel').carousel({
-                indicators: true,
-                fullWidth: true
-            });
             // Dropdown inet
             $('.dropdown-trigger').dropdown({
                 alignment: 'left',
