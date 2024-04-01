@@ -1,118 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+    <meta charset="UTF_8">
+    <meta http_equiv="X_UA_Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device_width, initial_scale=1.0">
+    <title>Skills Section</title>
 
-	<link rel="stylesheet" href="style.css">
+	    <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-	<div class="container">
-		<div class="container certificate">
-			<div class="slide-container">
-				<div class="slide">
-					<div class="content">
-						<h3>Creative Web Design</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eveniet fugit nulla, omnis illo doloribus ducimus odio nostrum impedit et deleniti, quo, blanditiis reprehenderit voluptatibus veniam? Dignissimos necessitatibus a rerum?</p>
-					</div>
-					<div class="image">
-						<img src="Certificates/ESTEVES-CWD-CERTIFICATE-1_page-0001.jpg" alt="">
-					</div>
-				</div>
-			</div>
-			<div class="slide-container">
-				<div class="slide">
-					<div class="content">
-						<h3>Creative Web Design</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eveniet fugit nulla, omnis illo doloribus ducimus odio nostrum impedit et deleniti, quo, blanditiis reprehenderit voluptatibus veniam? Dignissimos necessitatibus a rerum?</p>
-					</div>
-					<div class="image">
-						<img src="Certificates/ESTEVES-CCS-CERTIFICATE-1_page-0001.jpg" alt="">
-					</div>
-				</div>
-			</div>
-			<div class="slide-container active">
-				<div class="slide">
-					<div class="content">
-						<h3>Creative Web Design</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eveniet fugit nulla, omnis illo doloribus ducimus odio nostrum impedit et deleniti, quo, blanditiis reprehenderit voluptatibus veniam? Dignissimos necessitatibus a rerum?</p>
-					</div>
-					<div class="image">
-						<img src="Certificates/Graphic Design with Canva Course_Kurso.ph_page-0001.jpg" alt="">
-					</div>
-				</div>
-			</div>
-			<div class="slide-container">
-				<div class="slide">
-					<div class="content">
-						<h3>Creative Web Design</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eveniet fugit nulla, omnis illo doloribus ducimus odio nostrum impedit et deleniti, quo, blanditiis reprehenderit voluptatibus veniam? Dignissimos necessitatibus a rerum?</p>
-					</div>
-					<div class="image">
-						<img src="Certificates/Meg Lean G. Esteves Certificates_page-0001.jpg" alt="">
-					</div>
-				</div>
-			</div>
-			<div class="slide-container">
-				<div class="slide">
-					<div class="content">
-						<h3>Creative Web Design</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eveniet fugit nulla, omnis illo doloribus ducimus odio nostrum impedit et deleniti, quo, blanditiis reprehenderit voluptatibus veniam? Dignissimos necessitatibus a rerum?</p>
-					</div>
-					<div class="image">
-						<img src="Certificates/Meg Lean G. Esteves Certificates_page-0002.jpg" alt="">
+	<section>
+		<div class="container skill">
+			<div class="row">
+				<div class="col s12 m6">
+					<div class="horizontal-bars">
+						<div class="bar">
+							<div class="info">
+								<span>HTML</span>
+							</div>
+							<div class="progress-line html">
+								<span></span>
+							</div>
+						</div>
+						<div class="bar">
+							<div class="info">
+								<span>CSS</span>
+							</div>
+							<div class="progress-line css">
+								<span></span>
+							</div>
+						</div>
+						<div class="bar">
+							<div class="info">
+								<span>jQuery</span>
+							</div>
+							<div class="progress-line jquery">
+								<span></span>
+							</div>
+						</div>
+						<div class="bar">
+							<div class="info">
+								<span>Python</span>
+							</div>
+							<div class="progress-line python">
+								<span></span>
+							</div>
+						</div>
+						<div class="bar">
+							<div class="info">
+								<span>MySQL</span>
+							</div>
+							<div class="progress-line mysql">
+								<span></span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="slide-container">
-				<div class="slide">
-					<div class="content">
-						<h3>Creative Web Design</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eveniet fugit nulla, omnis illo doloribus ducimus odio nostrum impedit et deleniti, quo, blanditiis reprehenderit voluptatibus veniam? Dignissimos necessitatibus a rerum?</p>
-					</div>
-					<div class="image">
-						<img src="Certificates/Meg Lean G. Esteves Certificates_page-0003.jpg" alt="">
-					</div>
-				</div>
-			</div>
-	
-			<div id="prev" onclick="prev()"> < </div>
-			<div id="next" onclick="next()"> > </div>
-	
-	
-	
 		</div>
-	</div>
-	
+	</section>
+    
 
+	    <!-- jQuery CDN -->
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-
-	<script>
-		let slides = document.querySelectorAll('.slide-container');
-		let index = 0;
-
-		// next function
-		function next(){
-			slides[index].classList.remove('active');
-			index = (index + 1) % slides.length;
-			slides[index].classList.add('active')
-		}
-
-
-		// previous function
-		function prev(){
-			slides[index].classList.remove('active');
-			index = (index - 1 + slides.length) % slides.length;
-			slides[index].classList.add('active')
-		}
-
-		
-	</script>
-
-
-
+		<!-- Compiled and minified JavaScript -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 
 

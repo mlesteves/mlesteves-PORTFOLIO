@@ -427,6 +427,10 @@ padding: 20px;
     font-weight: 800;
     font-family: 'Times New Roman', Times, serif;
     width: 200px;
+
+
+
+
 }
 
 /* About Page */
@@ -462,22 +466,41 @@ padding: 20px;
 .h5 about {
     background-color: #FFFFFF;
 }
-.about-intro{
-    position: relative;
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 10px;
 
-    
+
+.container.intro-about{
+    width: 100%;
+}
+
+.intro-about-sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.intro-info{
+    flex: 1;
+}
+
+.intro-img{
+    flex: 1;
+    overflow: hidden;
+    padding: 50px;
+}
+
+.intro-img img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
 }
 
 
-.about-image1 {
-    float: left;
-    height: 280px;
-    margin-right: 20px;
-    margin-left: 30px;
+@media screen and (max-width: 768px){
+    .intro-about-sec{
+        flex-direction: column;
+    }
 }
 
 .about-content1 {
@@ -485,34 +508,192 @@ padding: 20px;
     margin-bottom: 40px;
     margin: 30px;
     padding-left: 30px;
+    padding-right: 30px;
     text-align: justify;
 }
 
 
 .about-ct {
-    background-color: #A4816D;
+    background-color: #FFFFFF;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
 .about-font1 {
-    background-color: #A4816D;
-    color: white;
+    background-color: #FFFFFF;
+    color: #A4816D;
     padding: 0;
     margin: 0;
     text-align: center;
 }
 
 .about-font2 {
-    background-color: #A4816D;
+    background-color: #FFFFFF;
     color: #202020;
     padding: 0;
     margin: 0;
     text-align: center;
 }
 
+
+
+
+
+
+.skill{
+    width: 500px;
+    margin: 60px auto;
+    color: #202020;
+    padding: 20px;
+}
+
+
+.skill h3{
+    text-align: center;
+}
+
+.skill li h6{
+    margin: 5px;
+}
+
+.skill li{
+    margin: 20px 0;
+    padding: 10px;
+}
+
+
+
+
+
+.container .skill{
+    width: 100%
+    padding: 0px 0px;
+}
+
+
+
+
+.horizontal-bars .bar{
+    margin: 10px 0;
+}
+.horizontal-bars .bar:first-child{
+    margin-top: 0;
+}
+.horizontal-bars .bar:last-child{
+    margin-bottom: 0;
+}
+.horizontal-bars .bar .info{
+    margin-bottom: 5px;
+}
+.horizontal-bars .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;   
+    opacity: 0;
+}
+
+.horizontal-bars .bar .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+.horizontal-bars .bar .progress-line span{
+    height: 100%;
+    background-color: #129cff;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.progress-line.html span{
+    width: 90%;
+}
+.progress-line.css span{
+    width: 60%;
+}
+.progress-line.jquery span{
+    width: 85%;
+}
+.progress-line.python span{
+    width: 50%;
+}
+.progress-line.mysql span{
+    width: 75%;
+}
+
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;   
+    opacity: 0;
+}
+.progress-line.html span::after{
+    content: "90%";
+}
+.progress-line.css span::after{
+    content: "60%";
+}
+.progress-line.jquery span::after{
+    content: "85%";
+}
+.progress-line.python span::after{
+    content: "50%";
+}
+.progress-line.mysql span::after{
+    content: "75%";
+}
+.progress-line span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color:#000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;   
+    opacity: 0;
+}
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .about-skill {
-    background-color: #202020;
+    background-color: #A4816D;
     padding-top: 25px;
     padding-bottom: 25px;
 }
@@ -526,7 +707,7 @@ padding: 20px;
 
 
 .about-text2 {
-    color: #A4816D;
+    color: #202020;
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;
     font-weight: 100;
@@ -582,15 +763,16 @@ padding: 20px;
 
 
 .certificate .slide-container .slide .content h3{
-    font-size: 35px;
-    background-color: #A4816D;
-    color: #FFFFFF;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #FFFFFF;
+    color: #202020;
     text-align: left;
 }
 .certificate .slide-container .slide .content h6{
     font-size: 18px;
-    background-color: #A4816D;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #A4816D;
     text-align: left;
     margin: 0;
 }
@@ -604,7 +786,7 @@ padding: 20px;
 
 .certificate .slide-container .slide .content p span{
     font-size: 18px;
-    color: #FFFFFF;
+    color: #A4816D;
     padding: 10px 0;
 }
 
@@ -619,14 +801,14 @@ padding: 20px;
 .certificate #prev,
 .certificate #next{
     position: absolute;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
     color: #FFFFFF;
     background: #202020;
-    height: 50px;
-    width: 50px;
-    line-height: 50px;
-    font-size: 25px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 10px;
     text-align: center;
     cursor: pointer;
     font-weight: bolder;
@@ -911,8 +1093,15 @@ body{
     color: #FFFFFF;
 }
 
-.row section p{
-    margin: 10px 0 17px 0;
+.sub-title{
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 0;
+    font-style: italic;
+}
+
+.row section li{
     color: #FFFFFF;
 }
 
@@ -1087,5 +1276,32 @@ p {
     font-weight: 800;
     font-family: 'Times New Roman', Times, serif;
     width: 200px;
+}
+
+
+/* Logo Sample 1 (InnoByte) */
+
+.customer-info h6{
+    padding: 0;
+    margin: 0;
+}
+
+.customer-info h6 span{
+    color: #A4816D;
+    font-weight: 600;
+}
+
+
+.customer-img img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+    margin-bottom: 0;
+}
+
+.design-sample{
+    margin-bottom: 0;
+    padding: 0;
 }
 
